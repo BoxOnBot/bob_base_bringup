@@ -1,12 +1,10 @@
-# Bobs very own bringup package!!!
-
-## Contains launch files for launching bob's software either for simlation in gazebo or IRL
+# Launch files for Bob's base functionalities
 
 This ros2 package contains the launch files required for launching the relevant ros nodes/ packages etc for bob's base functionalities 
 
-## Bringing up bob IRL
+## Bringing up bob
 
-To wake bob up IRL, make sure that the relevant hardware are connected (e.g. odrive and motors) and run:
+To wake bob up, make sure that the relevant hardware are connected (e.g. odrive and motors) and run:
 
 ```
 ros2 launch bob_base_bringup bob_base_bringup.launch.py
