@@ -2,7 +2,7 @@
 
 ## Contains launch files for launching bob's software either for simlation in gazebo or IRL
 
-This ros2 package contains all the launch files required for launching the relevant ros nodes/ packages etc for bob to come alive. 
+This ros2 package contains the launch files required for launching the relevant ros nodes/ packages etc for bob's base functionalities 
 
 ## Bringing up bob IRL
 
