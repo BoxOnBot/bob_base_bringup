@@ -15,7 +15,7 @@
 import os
 
 from launch import LaunchDescription
-from launch.actions import RegisterEventHandler
+from launch.actions import RegisterEventHandler, IncludeLaunchDescription
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
@@ -121,4 +121,12 @@ def generate_launch_description():
         control_node,
         robot_state_publisher_node,
         joint_state_broadcaster_spawner,
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([
+                PathJoinSubstitution([
+                    FindPackageShare('bob_base_bringup'),
+                    'launch/bob_realsense.launch.py'
+                ])
+            ])
+        )
     ])

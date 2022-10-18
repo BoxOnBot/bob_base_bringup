@@ -1,0 +1,12 @@
+/**:
+    ros__parameters:
+      video_device: "/dev/bob_cam_1"
+      framerate: 30.0
+      io_method: "mmap"
+      frame_id: "camera"
+      pixel_format: "mjpeg"
+      color_format: "mjpeg 5"
+      image_width: 640
+      image_height: 480
+      camera_name: "bob_cam_1"
+      camera_info_url: "package://bob_base_bringup/config/cam_1/camera_info.yaml"
