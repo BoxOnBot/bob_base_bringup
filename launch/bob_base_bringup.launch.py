@@ -125,7 +125,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([
                 PathJoinSubstitution([
                     FindPackageShare('bob_base_bringup'),
-                    'launch/bob_realsense_v2.launch.py'
+                    'launch/bob_realsense_v2.launch.py'#
                 ])
             ])
         ),
@@ -133,7 +133,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([
                 PathJoinSubstitution([
                     FindPackageShare('bob_base_bringup'),
-                    'launch/bob_monocular.launchs.py'
+                    'launch/bob_monocular.launch.py'
                 ])
             ])
         )
