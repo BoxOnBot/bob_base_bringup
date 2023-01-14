@@ -121,20 +121,20 @@ def generate_launch_description():
         control_node,
         robot_state_publisher_node,
         joint_state_broadcaster_spawner,
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                PathJoinSubstitution([
-                    FindPackageShare('bob_base_bringup'),
-                    'launch/bob_realsense_v2.launch.py'#
-                ])
-            ])
-        ),
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                PathJoinSubstitution([
-                    FindPackageShare('bob_base_bringup'),
-                    'launch/bob_monocular.launch.py'
-                ])
-            ])
-        )
+#        IncludeLaunchDescription(
+#            PythonLaunchDescriptionSource([
+#                PathJoinSubstitution([
+#                    FindPackageShare('bob_base_bringup'),
+#                    'launch/bob_realsense_v2.launch.py'
+#                ])
+#            ])
+#        )
+#        IncludeLaunchDescription(
+#            PythonLaunchDescriptionSource([
+#                PathJoinSubstitution([
+#                    FindPackageShare('bob_base_bringup'),
+#                    'launch/bob_monocular.launch.py'
+#                ])
+#            ])
+#        )
     ])
